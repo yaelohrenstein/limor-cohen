@@ -3,6 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 // import logo from '../logo.png';
 // import { useAppContext } from '../AppContext';
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaFacebookSquare } from "react-icons/fa";
 
 const Nav = styled.nav({
     color: 'white',
@@ -16,7 +18,7 @@ const Nav = styled.nav({
     height: '10vh',
     position: 'fixed',
     width: '100%',
-    fontFamily: 'Fredoka-font',
+    // fontFamily: 'VarelaRound',
     zIndex: 2,
     boxShadow: '0px 5px 5px #282c34'
 })
@@ -30,7 +32,8 @@ const Logo = styled.div({
     padding: '2px',
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    paddingRight: '7px'
 })
 
 const Routes = styled.ul<{ isOpen: boolean, isMobile: boolean }>(({ isOpen, isMobile }) => ({
@@ -70,6 +73,13 @@ const HamburgerButton = styled('div')({
   cursor: 'pointer',
   marginRight: '20px',
 });
+
+const Icons = styled.div({
+  display: 'flex',
+  flexDirection: 'row',
+  alignItems: 'center',
+  justifyContent: 'center'
+})
 
 const Navbar: React.FC = () => {
   const isMobile = false
@@ -127,6 +137,10 @@ const Navbar: React.FC = () => {
       {/* on click set isopen falses */}
         </Routes>
       )}
+       <Icons>
+            <FaSquareInstagram size={40}/>
+            <FaFacebookSquare size={40} onClick={() => window.open('https://www.facebook.com/razsagi.il')}/>
+        </Icons>
     </Nav>
   );
 };

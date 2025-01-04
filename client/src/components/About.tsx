@@ -4,7 +4,7 @@ import { styled } from 'styled-components';
 
 const Main = styled.div({
     backgroundColor: 'F1F5F9',
-    padding: '10px 30px',
+    padding: '30px 30px',
     height: '200px',
     width: '100%',
     display: 'flex',

@@ -5,13 +5,14 @@ import { createGlobalStyle } from 'styled-components';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 // import { AppProvider } from './AppContext';
+import './style.css'
 
 const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Fredoka-font';
+    font-family: 'VarelaRound';
   }
 
   body {

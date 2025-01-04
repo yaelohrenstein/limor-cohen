@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { styled } from 'styled-components';
 import About from '../components/About';
+import JoinUs from '../components/JoinUs';
 import Members from '../components/Members';
 
 const Main = styled.div({
@@ -16,6 +17,7 @@ const Home: React.FC = () => {
     <Main>
         <About></About>
         <Members></Members>
+        <JoinUs></JoinUs>
     </Main>
   );    
 };

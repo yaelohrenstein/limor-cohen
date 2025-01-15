@@ -1,6 +1,6 @@
 import React from 'react';
 import { styled } from 'styled-components';
-import { iPost } from '../../public/assets/types/Post';
+import { iPost } from '../assets/types/Post';
 
 const Main = styled.div({
     backgroundColor: '#FFFFFF',

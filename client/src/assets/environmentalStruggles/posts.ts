@@ -1,4 +1,4 @@
-import { iPost } from "../../../public/assets/types/Post";
+import { iPost } from "../types/Post";
 
 export const ESposts: iPost[] = [
     {

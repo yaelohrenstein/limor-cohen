@@ -1,4 +1,4 @@
-import { iMember } from '../../public/assets/types/Member'
+import { iMember } from "../assets/types/Member";
 
 export const membersInfo: iMember[] = [
     {name: 'לי-אור סטביסקי', pic: '/assets/images/Lior.jpeg', description: `לי-אור סטביסקי חברת מועצה וסגנית ראש העיר ברוטציה מחזיקת תיק חינוך ממ״ד ומבני ציבור. 

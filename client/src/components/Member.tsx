@@ -2,6 +2,8 @@ import { Button, Dialog, DialogContent, DialogContentText, DialogTitle } from '@
 import React, { useState } from 'react';
 import { styled } from 'styled-components';
 import { iMember } from '../assets/types/Member';
+import photo from '../assets/images/Lior.jpeg'
+
 const Main = styled.div({
     backgroundColor: '#F1F5F9',
     border: 'Window',
@@ -50,7 +52,7 @@ const Member: React.FC<IMemberProps> = ({ member }) => {
     return (
         <>
             <Main onClick={handleClick}>
-                <Img src={'../assets/Lior.jpeg'}></Img>
+                <Img src={member.pic}></Img>
                 <Description>{member.name}</Description>
             </Main>
              <DialogMember open={isDialogOpen} onClose={handleClose} >

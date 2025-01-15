@@ -24,12 +24,12 @@ module.exports = {
         test: /\.(png|jpe?g|gif|svg)$/i,
         type: 'asset/resource',
       },
-      {
-        test: /\.(jpg|png)$/,
-        use: {
-          loader: 'url-loader',
-        },
-      },
+      // {
+      //   test: /\.(jpg|png)$/,
+      //   use: {
+      //     loader: 'url-loader',
+      //   },
+      // },
     ]
   },
   devServer: {

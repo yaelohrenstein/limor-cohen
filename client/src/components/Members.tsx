@@ -1,10 +1,10 @@
 import { textAlign } from '@mui/system';
 import React, { useState } from 'react';
 import { styled } from 'styled-components';
-import { iMember } from '../../public/assets/types/Member';
 import Member from './Member';
 import {membersInfo} from '../info/members'
 import { useAppContext } from '../AppContext';
+import { iMember } from '../assets/types/Member';
 const Main = styled.div({
     backgroundColor: '#88BDF2',
     padding: '30px 30px',

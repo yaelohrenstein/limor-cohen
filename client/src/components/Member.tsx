@@ -48,7 +48,7 @@ const Member: React.FC<IMemberProps> = ({ member }) => {
         setIsDialogOpen(true) 
     }
     const handleClose = () => { setIsDialogOpen(false) }
-
+    alert('frjfkre')
     return (
         <>
             <Main onClick={handleClick}>

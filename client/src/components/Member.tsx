@@ -50,7 +50,7 @@ const Member: React.FC<IMemberProps> = ({ member }) => {
     return (
         <>
             <Main onClick={handleClick}>
-                <Img src={member.pic}></Img>
+                <Img src={'../assets/Lior.jpeg'}></Img>
                 <Description>{member.name}</Description>
             </Main>
              <DialogMember open={isDialogOpen} onClose={handleClose} >

@@ -1,7 +1,7 @@
 import { Button, Dialog, DialogContent, DialogContentText, DialogTitle } from '@mui/material';
 import React, { useState } from 'react';
 import { styled } from 'styled-components';
-import { iMember } from '../../public/assets/types/Member'
+import { iMember } from '../assets/types/Member';
 const Main = styled.div({
     backgroundColor: '#F1F5F9',
     border: 'Window',

@@ -1,12 +1,10 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import path from 'path';
 
 module.exports = {
   mode: "development",
   entry: './src/index.tsx',
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    publicPath: '/'
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js']

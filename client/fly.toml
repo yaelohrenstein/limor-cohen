@@ -23,3 +23,7 @@ primary_region = "fra"
 [[services.ports]]
   port = 443
   handlers = ["tls", "http"]
+
+[[statics]]
+  guest_path = "/client/public"
+  url_prefix = "/"

@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { styled } from 'styled-components';
 import { iMember } from '../../public/assets/types/Member'
 const Main = styled.div({
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#F1F5F9',
     border: 'Window',
     padding: '15px',
     height: 'fit-content',

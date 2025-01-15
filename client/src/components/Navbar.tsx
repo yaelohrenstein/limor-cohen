@@ -5,6 +5,7 @@ import styled from 'styled-components';
 // import { useAppContext } from '../AppContext';
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
+import { useAppContext } from '../AppContext';
 
 const Nav = styled.nav({
     color: 'white',
@@ -16,11 +17,13 @@ const Nav = styled.nav({
     padding: '0 0 0 10px',
     backgroundColor: '#384959',
     height: '10vh',
-    position: 'fixed',
+    position: 'sticky',
+    top: '0',
     width: '100%',
     // fontFamily: 'VarelaRound',
-    zIndex: 2,
-    boxShadow: '0px 5px 5px #282c34'
+    // zIndex: 2,
+    boxShadow: '0px 5px 5px #282c34',
+    justifyContent: 'space-between'
 })
 
 
@@ -82,7 +85,7 @@ const Icons = styled.div({
 })
 
 const Navbar: React.FC = () => {
-  const isMobile = false
+  const { isMobile } = useAppContext()
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
   
@@ -104,16 +107,22 @@ const Navbar: React.FC = () => {
       ) : (
       <Routes isOpen={true} isMobile={isMobile}>
       <NavLink
-        href='about'
+        href='#about'
         isActive={location.pathname === 'about'}
       >
         אודותי
       </NavLink>
       <NavLink
-        href='members'
-        isActive={location.pathname === 'about'}
+        href='#members'
+        isActive={location.pathname === 'members'}
       >
         חברי הסיעה
+      </NavLink>
+      <NavLink
+        href='#posts'
+        isActive={location.pathname === 'posts'}
+      >
+        פוסטים
       </NavLink>
       </Routes>)}
       {isMobile && (

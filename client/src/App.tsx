@@ -2,6 +2,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { createGlobalStyle } from 'styled-components';
+import { AppProvider } from './AppContext';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 // import { AppProvider } from './AppContext';
@@ -22,15 +23,15 @@ const GlobalStyle = createGlobalStyle`
 
 const App: React.FC = () => {
   return (
-    // <AppProvider>
+    <AppProvider>
     <Router>
         <GlobalStyle/>
         <Navbar />
-        <div style={{ paddingTop: '60px', display: 'flex' }}>
+        <div style={{}}>
         <Home></Home>
         </div>
     </Router>
-    // </AppProvider>
+    </AppProvider>
   );
 };
 

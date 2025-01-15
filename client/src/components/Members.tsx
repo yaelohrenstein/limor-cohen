@@ -4,6 +4,7 @@ import { styled } from 'styled-components';
 import { iMember } from '../../public/assets/types/Member';
 import Member from './Member';
 import {membersInfo} from '../info/members'
+import { useAppContext } from '../AppContext';
 const Main = styled.div({
     backgroundColor: '#88BDF2',
     padding: '30px 30px',
@@ -12,7 +13,8 @@ const Main = styled.div({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    scrollMarginTop: '10vh'
 })
 
 const Img = styled.img({
@@ -28,24 +30,24 @@ const Text = styled.div({
 
 const Headline = styled.h2({
     fontSize: '2em',
-    color: '#F1F5F9'
+    color: '#384959'
 })
 
 const Description = styled.div({
     // textAlign: 'center'
 })
 
-const MembersBoxs = styled.div({
+const MembersBoxs = styled.div<{ isMobile: boolean }>(({ isMobile }) => ({
     display: 'flex',
-    flexDirection: 'row'
-})
+    flexDirection: isMobile ? 'column' : 'row'
+}))
 
 const Members: React.FC = () => {
-  
+  const { isMobile } = useAppContext()
   return (
     <Main id='members'>
         <Headline>חברי הסיעה</Headline>
-        <MembersBoxs>
+        <MembersBoxs isMobile={isMobile}>
             {
                 membersInfo.map((member: iMember) => (
                     <Member member={member}></Member>

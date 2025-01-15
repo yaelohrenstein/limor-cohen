@@ -5,7 +5,7 @@ import { FaSquareInstagram } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
 
 const Main = styled.div({
-    backgroundColor: 'F1F5F9',
+    backgroundColor: '#F1F5F9',
     padding: '90px 30px',
     height: 'fit-content',
     width: '100%',
@@ -17,7 +17,8 @@ const Main = styled.div({
 
 const Headline = styled.h2({
     fontSize: '2em',
-    color: '#384959'
+    color: '#384959',
+    textAlign: 'center'
 })
 
 const Icons = styled.div({

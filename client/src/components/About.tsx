@@ -4,13 +4,14 @@ import { styled } from 'styled-components';
 
 const Main = styled.div({
     backgroundColor: 'F1F5F9',
-    padding: '30px 30px',
-    height: '200px',
+    padding: '40px 30px',
+    // height: '200px',
     width: '100%',
     display: 'flex',
-    flexDirection: 'row-reverse',
+    flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    scrollMarginTop: '10vh'
 })
 
 const Img = styled.img({
@@ -20,8 +21,11 @@ const Img = styled.img({
 
 const Text = styled.div({
     display: 'flex', 
-    flexDirection: 'column',
-    textAlign: 'center'
+    flexDirection: 'row-reverse',
+    textAlign: 'center',
+    justifyContent: 'center',
+    alignItems: 'center',
+
 })
 
 const Headline = styled.h2({
@@ -37,9 +41,9 @@ const About: React.FC = () => {
   
   return (
     <Main id='about'>
-        <Img src='/assets/images/raz.jpeg'></Img>
-        <Text>
             <Headline> אודותי </Headline>
+        <Text>
+        <Img src='/assets/images/raz.jpeg'></Img>
             <Description>
                 אל"מ (מיל') רז שגיא, נשוי ואב לשלושה. מכהן כראש עיריית ראש העין מחודש מרץ 2024
             </Description>

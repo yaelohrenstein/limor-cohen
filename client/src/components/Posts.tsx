@@ -1,10 +1,10 @@
 import { Box, IconButton, Card, CardMedia, CardContent, Typography } from '@mui/material';
 import React, { useState } from 'react';
 import { styled } from 'styled-components';
-import { iPost } from '../../public/assets/types/Post';
 import Post from './Post';
 import { MdArrowBackIos } from "react-icons/md";
 import { MdArrowForwardIos } from "react-icons/md";
+import { iPost } from '../assets/types/Post';
 
 const Main = styled.div<{ backgroundColor: string }>(({ backgroundColor }) => ({
     backgroundColor: backgroundColor,

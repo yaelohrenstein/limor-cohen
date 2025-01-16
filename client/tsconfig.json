@@ -8,5 +8,5 @@
       "strict": true,
       "esModuleInterop": true
     },
-    "include": ["src/**/*", "public/assets/types", "public/assets/info"]
+    "include": ["src/**/*", "public/assets/types", "public/assets/info", "public/assets/images"]
 }

@@ -23,6 +23,7 @@ const Home: React.FC = () => {
   return (
     <Main>
         <About></About> 
+        <div>mmjkm</div>
         <Posts posts={Eposts} backroundColor='#88BDF2' textColor='#F1F5F9' headline='חינוך'></Posts>
         <Posts posts={Gposts} backroundColor='#F1F5F9' textColor='#384959' headline='כללי'></Posts>
         <Posts posts={Dposts} backroundColor='#88BDF2' textColor='#F1F5F9' headline='פיתוח'></Posts>
